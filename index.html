@@ -15,7 +15,9 @@
         </div>  
         <button onclick="displayPassword(12)"><img src="images/generate.png">Générer le mot de passe</button>
         <div class="commentaire">
-            <h3>Note :</h3><p>Cette application génère aléatoirement un mot de passe avec les caractères compris dans l'espace de nom suivant :  <i>"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=<>?"</i>.<br>Le mot de passe ainsi générer possède une longeur de <b>12 caractères</b>.</p>
+            <h3>Note :</h3><p>Cette application génère aléatoirement un mot de passe avec les caractères compris dans l'espace de nom suivant : 
+            <i>"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=<>?"</i>.<br>
+            Le mot de passe ainsi générer possède une longeur de <b>12 caractères</b>.</p>
         </div>
         
     </div>
@@ -25,7 +27,7 @@
             const chaine = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=<>?";
             let password = "";
 
-            for (i =0 ; i <= longeur ; i++) {
+            for (i =0 ; i < longeur ; i++) {
                 const randomPwdIndex = Math.floor(Math.random() * chaine.length)
                 password += chaine[randomPwdIndex];
             }
