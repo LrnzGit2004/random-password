@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #010958;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+margin: 12%;
+width: 95%;
+max-width: 700px;
+    
+}
+.container h1 {
+    font-weight: 600;
+    font-size: 45px;
+}
+.container h1 span {
+    color: rgb(0, 192, 128);
+    border-bottom: 4px solid rgb(0, 192, 128);
+    padding-bottom: 15px;
+    
+    
+}
+.display {
+    width: 100%;
+    margin-top: 50px;
+    
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 6px;
+}
+input {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    width: 35%;
+    font-size: 24px;
+    
+}
+img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+.container button {
+    border: 0;
+    outline: 0;
+    background: rgb(0, 192, 128);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.container button img {
+    width: 10%;
+}
+
+.commentaire {
+    margin-top: 50px;
+    color: #9b9b9b;
+    transition: color .5s;
+}
+.commentaire:hover {
+    color: white;
+}
+h3 {
+    padding-bottom: 10px;
+}
+i:hover {
+    color: rgb(0, 192, 128);
+}
+p {
+    line-height: 25px;
+}
+
+/* responsive Design */
+
+@media (max-width : 830px) {
+    .container {
+        margin-left:30px;
+    }
+    .display {
+        width: 90%;
+    }
+    input {
+        width: 75%
+    }
+    .commentaire {
+        width: 75%;
+    }
+}
+
+@media (max-width : 510px) {
+    
+    .container h1 span {
+    border-bottom: 0;
+    }
+    
+    .display {
+        width: 90%;
+
+    }
+}
+
+@media (max-width : 634px) {
+    .commentaire {
+        display: none;
+    }
+}
+
+@media (max-width : 400px) {
+    .container {
+        align-items: center;
+    }
+    img {
+        
+        height: 30px;
+    }
+    input {
+        width: 95%;
+        font-size: 20px;
+    }
+    .container button img {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .container button {
+        
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px 15px;
+    }
+}
